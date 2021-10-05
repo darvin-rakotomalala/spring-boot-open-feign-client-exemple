@@ -47,6 +47,7 @@ Nous allons créer un FeignClient à consommer à partir du point de terminaison
 ### Architecture technique
 ---
 Cette image présente l'architecture globale du projet.<br/><br/>
+![Architecture_ClientFeign](https://user-images.githubusercontent.com/75081354/136008419-f02b1b8f-9977-4acb-ba88-e9d048662995.jpg)
 
 Le module au cœur du Spring Framework (Spring Core) repose fondamentalement sur un seul principe de conception objet : l’inversion de contrôle.<br/>
 	
@@ -69,13 +70,13 @@ et c'est le Framework qui s'occupe du code technique (Exigences Techniques).
 Pour tester les APIs vous pouvez utiliser Postman, Swagger, curl ou n'importe quel client HTTP :<br/>
 * GET `/api/posts` - Récupérer tous les posts.
 * GET `/api/posts/{postId}` - Récupérer un post existant.
-* GET `/api/posts/userId/{userId} - Récupérer tous les post d'un utilisateur.
-* POST `/api/posts/add - Ajouter un post.
-* PUT `/api/posts/update/{postId} - Mettre à jour un post.
-* DELETE `/api/posts/delete/{postId} - Supprimer un post.
+* GET `/api/posts/userId/{userId}` - Récupérer tous les post d'un utilisateur.
+* POST `/api/posts/add` - Ajouter un post.
+* PUT `/api/posts/update/{postId}` - Mettre à jour un post.
+* DELETE `/api/posts/delete/{postId}` - Supprimer un post.
 
-Une fois l'application lancer il faut vérifier que le swagger est UP en checkant l'url suivante : `http://localhost:8080/v3/api-docs`* <br/>
-Utilisez un client REST comme postman pour importer la collection des WS en utilisant url : `http://localhost:8080/v3/api-docs`*
+Une fois l'application lancer il faut vérifier que le swagger est UP en checkant l'url suivante : `http://localhost:8080/v3/api-docs` <br/>
+Utilisez un client REST comme postman pour importer la collection des WS en utilisant url : `http://localhost:8080/v3/api-docs`
 
 ### Installation
 ---
